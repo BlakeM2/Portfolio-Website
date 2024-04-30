@@ -159,16 +159,38 @@ body {
     width: 3rem;
 }
 
-.hidden {
+.hidden-horizontal {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
 }
-.show {
+.hidden-vertical-top {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+.hidden-vertical-bottom {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.show-horizontal {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+.show-vertical-top {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+.show-vertical-bottom {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 .personal-background:nth-child(2) {
